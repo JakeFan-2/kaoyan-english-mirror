@@ -50,8 +50,10 @@ SOURCES = {
     },
     "guardian": {
         "name": "The Guardian", "group": "社会", "level": "L4", "mode": "rss-full",
+        # 频道级 group 覆盖：World/Opinion 国际议题归「时政」，Education/Society 归「社会」
         "channels": {
-            "Opinion":   {"url": "https://www.theguardian.com/commentisfree/rss", "zh": "Opinion"},
+            "World":     {"url": "https://www.theguardian.com/world/rss",         "zh": "World",     "group": "时政"},
+            "Opinion":   {"url": "https://www.theguardian.com/commentisfree/rss", "zh": "Opinion",   "group": "时政"},
             "Education": {"url": "https://www.theguardian.com/education/rss",     "zh": "Education"},
             "Society":   {"url": "https://www.theguardian.com/society/rss",       "zh": "Society"},
         },
@@ -143,10 +145,13 @@ def main():
                     c = build_candidate(e, cfg, ch_zh)
                     if c is None:
                         continue
+                    if "group" in ch:
+                        c["group"] = ch["group"]  # 频道级题材覆盖
                     link_norm = c["link"].rstrip("/").lower()
                     if link_norm in seen_links:
                         continue
                     seen_links.add(link_norm)
+                    st["candidates"] += 1  # 修复：统计字段自增（v1 bug）
                     all_candidates.append((key, c))
             except Exception as ex2:
                 st["ok"] = False
