@@ -1,0 +1,43 @@
+name: mirror-kaoyan-sources
+on:
+  schedule:
+    # 每 6h：UTC 00/06/12/18 = 上海 08/14/20/02 —— 保证上海 16:00 本地推送前
+    # 必有当日（上海日期）新鲜文章
+    - cron: '0 */6 * * *'
+  workflow_dispatch: {}   # 手动触发（阶段 1 调试用）
+
+permissions:
+  contents: write          # 内置 GITHUB_TOKEN，仅写本仓库
+
+concurrency:
+  group: mirror-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest   # 境外出口 IP（被墙源可达）
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install -q feedparser requests trafilatura
+
+      - name: Fetch kaoyan sources
+        run: python fetch_sources.py
+
+      - name: Commit & push mirror content
+        run: |
+          git config user.name "mirror-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "无新内容，跳过提交"
+          else
+            git commit -m "sync $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
