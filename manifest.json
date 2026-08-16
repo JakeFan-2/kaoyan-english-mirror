@@ -1,7 +1,7 @@
 {
  "date": "2026-08-16",
- "generated_at": "2026-08-16T19:28:11+08:00",
- "total": 63,
+ "generated_at": "2026-08-16T19:30:16+08:00",
+ "total": 79,
  "sources": {
   "The Economist": {
    "ok": true,
@@ -12,8 +12,8 @@
   },
   "The Guardian": {
    "ok": true,
-   "candidates": 29,
-   "channels": 4,
+   "candidates": 45,
+   "channels": 6,
    "error": null,
    "url": "https://www.theguardian.com/society/rss"
   },
@@ -37,18 +37,6 @@
    "channels": 3,
    "error": null,
    "url": "https://rss.csmonitor.com/feeds/world"
-  },
-  "Harvard Business Review": {
-   "ok": false,
-   "candidates": 0,
-   "channels": 0,
-   "error": "rss_fetch_failed"
-  },
-  "Scientific American": {
-   "ok": false,
-   "candidates": 0,
-   "channels": 0,
-   "error": "rss_fetch_failed"
   }
  }
 }
