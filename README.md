@@ -19,15 +19,20 @@ articles/YYYY-MM-DD/*.json   当日候选文章（上海日期）
 manifest.json                各源抓取统计（本地陈旧告警/观测用）
 ```
 
-## 抓取清单（P0 首批）
+## 抓取清单（P0+P1 已接入）
 
 | 源 | 频道 | 模式 | 题材组 |
 |---|---|---|---|
 | The Economist | Leaders / Briefing | rss-summary（付费墙，截断自动弃） | 时政 |
-| The Guardian | Opinion / Education / Society | rss-full（RSS 自带全文） | 社会 |
+| The Guardian | Opinion / Education / Society / World | rss-full（RSS 自带全文） | 社会/时政 |
 | NYT | Opinion / World / Business | rss-summary | 时政 |
+| The Atlantic (P1) | All / Ideas | rss-summary | 社会/时政 |
+| Christian Science Monitor (P1) | All / Commentary / World | rss-summary | 时政 |
+| Harvard Business Review (P1) | All | rss-summary | 社会 |
+| Scientific American (P1) | Health / Mind / All | rss-summary | 科技 |
 
-P1 待加：The Atlantic / CSM / HBR / Scientific American。
+> 多候选 RSS：部分频道配置 `urls` 列表（主→备依次尝试），防源站 URL 变更导致 404。
+> manifest.json 记录各源实际可用 URL 与候选数，供本地观测/排查。
 
 ## 本地拉取（阶段 2 接入）
 
