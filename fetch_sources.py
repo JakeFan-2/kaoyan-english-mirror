@@ -63,7 +63,7 @@ SOURCES = {
             "Society":   {"urls": ["https://www.theguardian.com/society/rss"],       "zh": "Society"},
             "Science":   {"urls": ["https://www.theguardian.com/science/rss"],        "zh": "Science",  "group": "科技"},
             "Technology":{"urls": ["https://www.theguardian.com/technology/rss"],     "zh": "Technology","group": "科技"},
-            "Culture":   {"urls": ["https://www.theguardian.com/culture/rss"],        "zh": "Culture"},
+            "Culture":   {"urls": ["https://www.theguardian.com/culture/rss"],        "zh": "Culture", "group": "文化"},
             "Environment":{"urls": ["https://www.theguardian.com/environment/rss"],    "zh": "Environment", "group": "环境"},
         },
     },
