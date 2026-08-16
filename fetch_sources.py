@@ -53,13 +53,18 @@ SOURCES = {
         "name": "The Guardian", "group": "社会", "level": "L4", "mode": "rss-full",
         # 频道级 group 覆盖：World/Opinion/Business/Economy 国际·经济议题归「时政」，Education/Society 归「社会」
         # 2026-08-16 新增 Business/Economy：填补 Economist 核心题材（经济/国际关系）——合规红线内最接近的替代
+        # 2026-08-16 v6.8：新增 Science/Technology/Culture/Environment —— 考研真题高频题材全覆盖
         "channels": {
             "World":     {"urls": ["https://www.theguardian.com/world/rss"],         "zh": "World",     "group": "时政"},
             "Opinion":   {"urls": ["https://www.theguardian.com/commentisfree/rss"], "zh": "Opinion",   "group": "时政"},
             "Business":  {"urls": ["https://www.theguardian.com/business/rss"],      "zh": "Business",  "group": "时政"},
             "Economy":   {"urls": ["https://www.theguardian.com/business/economics/rss"], "zh": "Economy", "group": "时政"},
-            "Education": {"urls": ["https://www.theguardian.com/education/rss"],     "zh": "Education"},
+            "Education": {"urls": ["https://www.theguardian.com/education/rss"],     "zh": "Education", "group": "文化"},
             "Society":   {"urls": ["https://www.theguardian.com/society/rss"],       "zh": "Society"},
+            "Science":   {"urls": ["https://www.theguardian.com/science/rss"],        "zh": "Science",  "group": "科技"},
+            "Technology":{"urls": ["https://www.theguardian.com/technology/rss"],     "zh": "Technology","group": "科技"},
+            "Culture":   {"urls": ["https://www.theguardian.com/culture/rss"],        "zh": "Culture"},
+            "Environment":{"urls": ["https://www.theguardian.com/environment/rss"],    "zh": "Environment", "group": "环境"},
         },
     },
     "nytimes": {
