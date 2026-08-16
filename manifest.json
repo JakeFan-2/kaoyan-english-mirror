@@ -1,25 +1,54 @@
 {
- "date": "2026-08-13",
- "generated_at": "2026-08-13T20:43:07+08:00",
- "total": 30,
+ "date": "2026-08-16",
+ "generated_at": "2026-08-16T19:28:11+08:00",
+ "total": 63,
  "sources": {
   "The Economist": {
    "ok": true,
    "candidates": 0,
    "channels": 2,
-   "error": null
+   "error": null,
+   "url": "https://www.economist.com/briefing/rss.xml"
   },
   "The Guardian": {
    "ok": true,
-   "candidates": 30,
+   "candidates": 29,
    "channels": 4,
-   "error": null
+   "error": null,
+   "url": "https://www.theguardian.com/society/rss"
   },
   "The New York Times": {
    "ok": true,
    "candidates": 0,
    "channels": 3,
-   "error": null
+   "error": null,
+   "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+  },
+  "The Atlantic": {
+   "ok": true,
+   "candidates": 13,
+   "channels": 2,
+   "error": null,
+   "url": "https://www.theatlantic.com/feed/channel/ideas/"
+  },
+  "Christian Science Monitor": {
+   "ok": true,
+   "candidates": 21,
+   "channels": 3,
+   "error": null,
+   "url": "https://rss.csmonitor.com/feeds/world"
+  },
+  "Harvard Business Review": {
+   "ok": false,
+   "candidates": 0,
+   "channels": 0,
+   "error": "rss_fetch_failed"
+  },
+  "Scientific American": {
+   "ok": false,
+   "candidates": 0,
+   "channels": 0,
+   "error": "rss_fetch_failed"
   }
  }
 }
