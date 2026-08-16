@@ -51,10 +51,13 @@ SOURCES = {
     },
     "guardian": {
         "name": "The Guardian", "group": "社会", "level": "L4", "mode": "rss-full",
-        # 频道级 group 覆盖：World/Opinion 国际议题归「时政」，Education/Society 归「社会」
+        # 频道级 group 覆盖：World/Opinion/Business/Economy 国际·经济议题归「时政」，Education/Society 归「社会」
+        # 2026-08-16 新增 Business/Economy：填补 Economist 核心题材（经济/国际关系）——合规红线内最接近的替代
         "channels": {
             "World":     {"urls": ["https://www.theguardian.com/world/rss"],         "zh": "World",     "group": "时政"},
             "Opinion":   {"urls": ["https://www.theguardian.com/commentisfree/rss"], "zh": "Opinion",   "group": "时政"},
+            "Business":  {"urls": ["https://www.theguardian.com/business/rss"],      "zh": "Business",  "group": "时政"},
+            "Economy":   {"urls": ["https://www.theguardian.com/business/economics/rss"], "zh": "Economy", "group": "时政"},
             "Education": {"urls": ["https://www.theguardian.com/education/rss"],     "zh": "Education"},
             "Society":   {"urls": ["https://www.theguardian.com/society/rss"],       "zh": "Society"},
         },
@@ -84,21 +87,8 @@ SOURCES = {
             "World":       {"urls": ["https://www.csmonitor.com/layout/set/rss/content/rssWorld", "https://rss.csmonitor.com/feeds/world"], "zh": "World"},
         },
     },
-    "hbr": {
-        "name": "Harvard Business Review", "group": "社会", "level": "L4", "mode": "rss-summary",
-        "channels": {
-            "All": {"urls": ["https://hbr.org/feed"], "zh": "All"},
-        },
-    },
-    "sciam": {
-        "name": "Scientific American", "group": "科技", "level": "L4", "mode": "rss-summary",
-        # 考研适配：健康/心理频道（2022 Text 4 同题材）+ 全站兜底
-        "channels": {
-            "Health": {"urls": ["https://www.scientificamerican.com/health/feed/"], "zh": "Health"},
-            "Mind":   {"urls": ["https://www.scientificamerican.com/mind/feed/"],   "zh": "Mind"},
-            "All":    {"urls": ["https://www.scientificamerican.com/feed/"],        "zh": "All"},
-        },
-    },
+    # HBR/SciAm 官方 RSS 已下线（2026-08-16 实测 404）：hbr.org/feed、scientificamerican.com/feed/ 等端点全部失效，
+    # 暂从候选池移除（避免每轮 FAIL 噪声）。后续若需接入：HBR 需登录态 Topic Feeds；SciAm 可走 sitemap.xml 方案。
 }
 
 
