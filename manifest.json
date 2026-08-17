@@ -1,7 +1,7 @@
 {
  "date": "2026-08-17",
- "generated_at": "2026-08-17T09:21:21+08:00",
- "total": 113,
+ "generated_at": "2026-08-17T14:58:29+08:00",
+ "total": 108,
  "sources": {
   "The Economist": {
    "ok": true,
@@ -12,21 +12,21 @@
   },
   "The Guardian": {
    "ok": true,
-   "candidates": 76,
+   "candidates": 75,
    "channels": 10,
    "error": null,
    "url": "https://www.theguardian.com/environment/rss"
   },
   "The New York Times": {
    "ok": true,
-   "candidates": 3,
+   "candidates": 0,
    "channels": 3,
    "error": null,
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
   },
   "The Atlantic": {
    "ok": true,
-   "candidates": 13,
+   "candidates": 12,
    "channels": 2,
    "error": null,
    "url": "https://www.theatlantic.com/feed/channel/ideas/"
