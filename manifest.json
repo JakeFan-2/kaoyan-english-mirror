@@ -1,7 +1,7 @@
 {
- "date": "2026-08-27",
- "generated_at": "2026-08-27T16:05:22+08:00",
- "total": 102,
+ "date": "2026-08-28",
+ "generated_at": "2026-08-28T05:56:03+08:00",
+ "total": 101,
  "sources": {
   "The Economist": {
    "ok": true,
@@ -12,7 +12,7 @@
   },
   "The Guardian": {
    "ok": true,
-   "candidates": 68,
+   "candidates": 69,
    "channels": 10,
    "error": null,
    "url": "https://www.theguardian.com/environment/rss"
@@ -26,7 +26,7 @@
   },
   "The Atlantic": {
    "ok": true,
-   "candidates": 14,
+   "candidates": 12,
    "channels": 2,
    "error": null,
    "url": "https://www.theatlantic.com/feed/channel/ideas/"
