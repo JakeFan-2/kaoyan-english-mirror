@@ -1,7 +1,7 @@
 {
  "date": "2026-09-08",
- "generated_at": "2026-09-08T11:34:05+08:00",
- "total": 108,
+ "generated_at": "2026-09-08T18:48:58+08:00",
+ "total": 109,
  "sources": {
   "The Economist": {
    "ok": true,
@@ -12,7 +12,7 @@
   },
   "The Guardian": {
    "ok": true,
-   "candidates": 72,
+   "candidates": 73,
    "channels": 10,
    "error": null,
    "url": "https://www.theguardian.com/environment/rss"
