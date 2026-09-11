@@ -1,0 +1,47 @@
+name: mirror-ai-deep-sources
+on:
+  schedule:
+    # 每 6h：UTC 00/06/12/18 = 上海 08/14/20/02 —— 保证上海周一/周五 19:00 推送前有新鲜内容
+    - cron: '0 */6 * * *'
+  workflow_dispatch: {}   # 手动触发（调试用）
+
+permissions:
+  contents: write          # 内置 GITHUB_TOKEN，仅写本仓库
+
+concurrency:
+  group: mirror-ai-deep
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest   # 境外出口 IP；且无头浏览器在 runner 上跑，不占本地资源
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install deps
+        run: pip install -q requests trafilatura beautifulsoup4 lxml
+
+      - name: Install Playwright chromium
+        run: |
+          pip install -q playwright
+          playwright install --with-deps chromium
+
+      - name: Fetch AI deep sources
+        run: python ai-deep-tools/fetch_ai_deep.py
+
+      - name: Commit & push mirror content
+        run: |
+          git config user.name "mirror-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "无新内容，跳过提交"
+          else
+            git commit -m "ai-deep sync $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
