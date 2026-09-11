@@ -75,22 +75,35 @@ def extract(html_text: str) -> str:
         return ""
 
 
+BRAND_RE = re.compile(r"归藏|歸藏|甲子光年|机器之心|量子位|QbitAI|AI 资讯")
+
+
+def _good_title(t: str) -> bool:
+    return bool(t) and len(t) >= 6 and not BRAND_RE.search(t)
+
+
 def title_of(html_text: str, fallback: str = "") -> str:
-    # 优先取最长的 h1（正文标题），避开导航/站名
-    hs = [clean(re.sub(r"<[^>]+>", " ", m)) for m in
-          re.findall(r"<h1[^>]*>(.*?)</h1>", html_text, re.S | re.I)]
-    hs = [h for h in hs if len(h) >= 4]
-    if hs:
-        return max(hs, key=len)
-    for pat in (r'<meta[^>]+property=["\']og:title["\'][^>]+content=["\']([^"\']+)',
-                r"<title[^>]*>(.*?)</title>"):
-        m = re.search(pat, html_text, re.S | re.I)
-        if m:
-            t = clean(m.group(1))
-            t = re.sub(r"\s*[-|｜]\s*(量子位|机器之心|甲子光年|歸藏|归藏).*$", "", t)
-            if t:
-                return t.strip()
-    return fallback
+    """标题提取：<title> → og:title → 各 h1，取第一个「像文章标题」的。
+
+    站点差异：甲子光年靠 <title>（无 og:title）；归藏的 <title>/og 都是站名，靠 h1。
+    """
+    cands = []
+    m = re.search(r"<title[^>]*>(.*?)</title>", html_text, re.S | re.I)
+    if m:
+        cands.append(clean(m.group(1)))
+    m = re.search(r'<meta[^>]+property=["\']og:title["\'][^>]+content=["\']([^"\']+)', html_text, re.S | re.I)
+    if m:
+        cands.append(clean(m.group(1)))
+    h1s = [clean(re.sub(r"<[^>]+>", " ", x))
+           for x in re.findall(r"<h1[^>]*>(.*?)</h1>", html_text, re.S | re.I)]
+    h1s = [h for h in h1s if h]
+    cands += h1s
+
+    for c in cands:
+        c = re.sub(r"\s*[-|｜]\s*(量子位|机器之心|甲子光年|歸藏|归藏).*$", "", c).strip()
+        if _good_title(c):
+            return c
+    return h1s[0] if h1s else (cands[0] if cands else fallback)
 
 
 def save(source: str, label: str, articles: list):
