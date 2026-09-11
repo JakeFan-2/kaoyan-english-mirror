@@ -76,20 +76,20 @@ def extract(html_text: str) -> str:
 
 
 def title_of(html_text: str, fallback: str = "") -> str:
+    # 优先取最长的 h1（正文标题），避开导航/站名
+    hs = [clean(re.sub(r"<[^>]+>", " ", m)) for m in
+          re.findall(r"<h1[^>]*>(.*?)</h1>", html_text, re.S | re.I)]
+    hs = [h for h in hs if len(h) >= 4]
+    if hs:
+        return max(hs, key=len)
     for pat in (r'<meta[^>]+property=["\']og:title["\'][^>]+content=["\']([^"\']+)',
                 r"<title[^>]*>(.*?)</title>"):
         m = re.search(pat, html_text, re.S | re.I)
         if m:
             t = clean(m.group(1))
             t = re.sub(r"\s*[-|｜]\s*(量子位|机器之心|甲子光年|歸藏|归藏).*$", "", t)
-            # og:title 有时返回站名（如「解藏的 AI 资讯」）→ 过短则改用首个 h1
-            if t and len(t) > 8:
+            if t:
                 return t.strip()
-    m = re.search(r"<h1[^>]*>(.*?)</h1>", html_text, re.S | re.I)
-    if m:
-        t = clean(re.sub(r"<[^>]+>", " ", m.group(1))).strip()
-        if t:
-            return t
     return fallback
 
 
