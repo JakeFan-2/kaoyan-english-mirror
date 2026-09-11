@@ -82,8 +82,14 @@ def title_of(html_text: str, fallback: str = "") -> str:
         if m:
             t = clean(m.group(1))
             t = re.sub(r"\s*[-|｜]\s*(量子位|机器之心|甲子光年|歸藏|归藏).*$", "", t)
-            if t:
+            # og:title 有时返回站名（如「解藏的 AI 资讯」）→ 过短则改用首个 h1
+            if t and len(t) > 8:
                 return t.strip()
+    m = re.search(r"<h1[^>]*>(.*?)</h1>", html_text, re.S | re.I)
+    if m:
+        t = clean(re.sub(r"<[^>]+>", " ", m.group(1))).strip()
+        if t:
+            return t
     return fallback
 
 
