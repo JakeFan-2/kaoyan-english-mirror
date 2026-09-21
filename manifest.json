@@ -1,7 +1,7 @@
 {
  "date": "2026-09-21",
- "generated_at": "2026-09-21T04:28:40+08:00",
- "total": 106,
+ "generated_at": "2026-09-21T11:53:24+08:00",
+ "total": 107,
  "sources": {
   "The Economist": {
    "ok": true,
@@ -33,7 +33,7 @@
   },
   "Christian Science Monitor": {
    "ok": true,
-   "candidates": 20,
+   "candidates": 21,
    "channels": 3,
    "error": null,
    "url": "https://rss.csmonitor.com/feeds/world"
