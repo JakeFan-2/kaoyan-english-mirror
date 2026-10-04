@@ -1,7 +1,7 @@
 {
  "date": "2026-10-04",
- "generated_at": "2026-10-04T04:43:12+08:00",
- "total": 110,
+ "generated_at": "2026-10-04T12:49:27+08:00",
+ "total": 107,
  "sources": {
   "The Economist": {
    "ok": true,
@@ -19,7 +19,7 @@
   },
   "The New York Times": {
    "ok": true,
-   "candidates": 3,
+   "candidates": 0,
    "channels": 3,
    "error": null,
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
