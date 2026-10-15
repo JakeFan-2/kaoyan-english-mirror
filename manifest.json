@@ -1,7 +1,7 @@
 {
  "date": "2026-10-16",
- "generated_at": "2026-10-16T00:30:38+08:00",
- "total": 100,
+ "generated_at": "2026-10-16T05:02:31+08:00",
+ "total": 102,
  "sources": {
   "The Economist": {
    "ok": true,
@@ -26,7 +26,7 @@
   },
   "The Atlantic": {
    "ok": true,
-   "candidates": 12,
+   "candidates": 14,
    "channels": 2,
    "error": null,
    "url": "https://www.theatlantic.com/feed/channel/ideas/"
