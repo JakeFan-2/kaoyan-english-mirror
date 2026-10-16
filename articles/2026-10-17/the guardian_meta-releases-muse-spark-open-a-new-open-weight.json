@@ -1,0 +1,11 @@
+{
+ "title": "Meta releases Muse Spark Open, a new ‘open-weight’ AI model",
+ "link": "https://www.theguardian.com/technology/2026/oct/16/meta-releases-muse-spark-open-a-new-open-weight-ai-model",
+ "source": "The Guardian",
+ "channel_zh": "Technology",
+ "group": "科技",
+ "level": "L4",
+ "text": "Meta on Thursday launched a new open-weight AI model which it claims rivals, and in some cases outperforms, similar products from leading Chinese developers.\nMuse Spark Open “is the most capable US open-weight model to date,” Meta’s chief of AI Alexandr Wang wrote on X.\nUnlike so-called closed models – such as Anthropic’s Claude or OpenAI’s ChatGPT – developers can download the parameters, known as weights and biases, of an open-weight model and modify them.\nChinese developers have emerged as dominant players in the open-weight market for AI models over the past couple of years.\nAlibaba’s Qwen, Moonshot AI’s Kimi K3 and Z.ai’s GLM models have been considered open-weight frontrunners globally, but Meta claims its new open model now competes on a similar level.\n“Built for coding and agentic work,” Muse Spark Open “excels at long-horizon tasks, complex software engineering, and multi-step reasoning,” Meta said in a blogpost, adding that “strong safeguards” have been integrated into the new model.\nMuse Spark Open is also “optimized” to run on Apple’s advanced M5 Ultra chips, Meta said, signaling an unusual partnership between the two tech companies.\nMuse Spark Open requires significant computing power. Users can run the model on two Mac Studios with M5 Ultra chips to create a “supercomputer” on their own desktop, Meta said.\nThe launch comes just days after Meta announced its newest closed model, which it said rivalled the most advanced versions of ChatGPT and Claude.\nMeta’s AI efforts were initially focused on open models, but more recently Zuckerberg has pushed the company to compete with OpenAI and Anthropic.",
+ "words": 261,
+ "mode": "rss-full"
+}
