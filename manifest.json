@@ -1,6 +1,6 @@
 {
  "date": "2026-10-17",
- "generated_at": "2026-10-17T18:18:20+08:00",
+ "generated_at": "2026-10-17T23:09:58+08:00",
  "total": 104,
  "sources": {
   "The Economist": {
@@ -19,14 +19,14 @@
   },
   "The New York Times": {
    "ok": true,
-   "candidates": 0,
+   "candidates": 1,
    "channels": 3,
    "error": null,
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
   },
   "The Atlantic": {
    "ok": true,
-   "candidates": 14,
+   "candidates": 13,
    "channels": 2,
    "error": null,
    "url": "https://www.theatlantic.com/feed/channel/ideas/"
