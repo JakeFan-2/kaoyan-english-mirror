@@ -1,7 +1,7 @@
 {
  "date": "2026-10-19",
- "generated_at": "2026-10-19T11:43:42+08:00",
- "total": 99,
+ "generated_at": "2026-10-19T20:27:37+08:00",
+ "total": 100,
  "sources": {
   "The Economist": {
    "ok": true,
@@ -26,14 +26,14 @@
   },
   "The Atlantic": {
    "ok": true,
-   "candidates": 10,
+   "candidates": 12,
    "channels": 2,
    "error": null,
    "url": "https://www.theatlantic.com/feed/channel/ideas/"
   },
   "Christian Science Monitor": {
    "ok": true,
-   "candidates": 18,
+   "candidates": 17,
    "channels": 3,
    "error": null,
    "url": "https://rss.csmonitor.com/feeds/world"
