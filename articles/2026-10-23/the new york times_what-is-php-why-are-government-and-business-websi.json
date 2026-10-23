@@ -1,0 +1,11 @@
+{
+ "title": "What Is PHP? Why Are Government and Business Websites Going Offline?",
+ "link": "https://www.nytimes.com/2026/10/22/technology/what-is-php-vulnerability-risks.html",
+ "source": "The New York Times",
+ "channel_zh": "Business",
+ "group": "时政",
+ "level": "L4",
+ "text": "Supported by\nWhat Is PHP? Why Are Government and Business Websites Going Offline?\nA critical security flaw in the programming language underpinning much of the web has prompted a global rush to patch vulnerable systems.\nGovernments and companies around the world are racing to patch their websites — or taking them offline until they can be fixed — after the discovery of major security flaws in PHP, a piece of software that underpins much of the internet.\nOpenAI, whose artificial intelligence models were used to find the bugs, said in a blog post that it was “one of the most impactful security issues in recent memory” given PHP’s widespread use.\nWhile many websites were taken down as a protective measure, as of Thursday afternoon there had not been any confirmed successful attacks using the PHP flaws, according to an analysis by Dataminr, a risk-intelligence cybersecurity company.\n“Observed activity since vulnerability disclosure remains limited to scanning, fingerprinting and use of non-working exploits, with no known compromises,” Dataminr said, though it added it was “only a matter of time” before successful intrusions would occur.\nWhat is PHP?\nPHP, short for PHP: Hypertext Preprocessor, is a decades-old, open-source programming language that is used to build and run web applications. By some estimates, about 70 percent of all websites and web applications use the software.\nServices in which PHP is a core ingredient include content management systems like WordPress and Drupal, which help people run websites. Because PHP is a sort of foundational code baked into so many platforms — think of it as invisible digital infrastructure — many businesses may not even realize they rely on PHP.\nRelated Content\nAdvertisement",
+ "words": 277,
+ "mode": "rss-summary"
+}
