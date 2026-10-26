@@ -1,0 +1,11 @@
+{
+ "title": "How citizen science is tracking changes in shorelines around the world",
+ "link": "https://www.theguardian.com/news/2026/oct/23/how-citizen-science-is-tracking-changes-in-shorelines-around-the-world",
+ "source": "The Guardian",
+ "channel_zh": "Science",
+ "group": "科技",
+ "level": "L4",
+ "text": "The shoreline changes with the weather. Tracking these changes over time is a labour-intensive task, and an army of citizen scientists with camera phones is a great asset.\nThe CoastSnap project started in Australia in 2017 and has spread to beaches worldwide. You may have spotted the setup while out walking along the coast: a cradle to rest your phone on while taking a picture and a sign explaining where to send the snap.\nLarge waves and high tides remove sand from a beach, while gentler conditions deposit sand and build the beach up again. Sandbars migrate in and out, and change shape with the waves and tides. Some shifts are temporary, some permanent. CoastSnap enables researchers to follow these changes day by day.\nThe cradle ensures each picture is taken from roughly the same position and angle. Software aligns each photograph, then performs a geometric flip to transform it into a bird’s-eye view of the beach. An algorithm maps the shoreline, correcting for the tide based on the timestamp.\nCoastSnap helps researchers track coastal erosion over time, see the changes caused by a particular storm, or monitor the effectiveness of beach replenishment schemes adding sand or shingle.\nThere are now more than 200 CoastSnap stations in 21 countries, including the UK, constituting the largest coordinated, land-based coastal monitoring programme in the world.",
+ "words": 223,
+ "mode": "rss-full"
+}
