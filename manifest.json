@@ -1,7 +1,7 @@
 {
  "date": "2026-10-27",
- "generated_at": "2026-10-27T12:07:47+08:00",
- "total": 107,
+ "generated_at": "2026-10-27T19:45:42+08:00",
+ "total": 106,
  "sources": {
   "The Economist": {
    "ok": true,
@@ -12,14 +12,14 @@
   },
   "The Guardian": {
    "ok": true,
-   "candidates": 73,
+   "candidates": 74,
    "channels": 10,
    "error": null,
    "url": "https://www.theguardian.com/environment/rss"
   },
   "The New York Times": {
    "ok": true,
-   "candidates": 2,
+   "candidates": 0,
    "channels": 3,
    "error": null,
    "url": "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
