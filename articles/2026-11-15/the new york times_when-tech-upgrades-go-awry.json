@@ -1,0 +1,11 @@
+{
+ "title": "When Tech ‘Upgrades’ Go Awry",
+ "link": "https://www.nytimes.com/2026/11/15/business/technology-dependence-microsoft-airlines.html",
+ "source": "The New York Times",
+ "channel_zh": "Business",
+ "group": "时政",
+ "level": "L4",
+ "text": "Supported by\nNews Analysis\nWhen Tech ‘Upgrades’ Go Awry\nIncidents involving Microsoft’s Outlook and the Federal Aviation Administration this past week demonstrated our dependence on fragile technology.\nPlanes grounded. Office work ground to a halt.\nThe past few days have served as a vivid reminder of our deep and mostly unthinking dependence on technology. It’s powerful, it’s ubiquitous and yet, at times, it can be alarmingly fragile.\nOld technology and new technology were the culprits. Starting on Thursday, Microsoft’s email, office and meeting software — delivered over the internet — stopped working for millions of users worldwide. Those cloud services were restored on Saturday.\nOn Friday, the Federal Aviation Administration ordered all flights grounded after some of its aged data-handling equipment faltered, raising potential safety issues. The order was lifted Friday night, but hundreds of thousands of passengers were stranded over the weekend.\nA telling irony is that both meltdowns were caused by attempted “upgrades” that went awry. New cables in the case of the F.A.A., and a planned increase in computing capacity in Microsoft’s case.\nThe upgrade challenge underlines the extraordinary complexity of multilayered combinations of hardware and software in major computing systems. Upset the delicate balance by making changes, even in an effort to improve performance, and you risk a system crash.\nThat happens frequently, though widespread outages are uncommon. The last big one came two years ago, when what should have been a routine software update by a security company, CrowdStrike, crashed millions of computers around the world that were running Microsoft Windows. Airlines grounded flights. Subways stopped. Operators of 911 lines couldn’t dispatch help. Stores shut down. Hospitals canceled surgeries. It took days to restore all the impaired machines.\nRelated Content\nAdvertisement",
+ "words": 286,
+ "mode": "rss-summary"
+}
