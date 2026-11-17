@@ -1,0 +1,11 @@
+{
+ "title": "Flights Grounded: Who Is to Blame?",
+ "link": "https://www.nytimes.com/2026/11/16/opinion/airlines-travel-grounding.html",
+ "source": "The New York Times",
+ "channel_zh": "Opinion",
+ "group": "时政",
+ "level": "L4",
+ "text": "Supported by\nletters\nFlights Grounded: Who Is to Blame?\nReaders cite mismanagement and ill-advised cuts by the Trump administration for the air travel breakdown on Friday.\nTo the Editor:\nRe “Breakdown After Breakdown, Aging Air Traffic System Frays” (front page, Nov. 15):\nI’ve spent over 25 years in information technology with IBM, H.P. and Compaq, planning and implementing mission-critical cutovers for Fortune 25 clients, including major brokerages, banks and the New York Stock Exchange.\nTransportation Secretary Sean Duffy attributes the Federal Aviation Administration’s outage to a router overload during a copper-to-fiber upgrade at a remote facility, and says it is not yet known whether the equipment or the installation was at fault. Your article describes a contractor upgrading air traffic control equipment, a broader job than that account suggests.\nEither way, a change at one remote site should not be able to cascade across a national network. Systems like this are built with testing and redundancy precisely to prevent that. Hidden dependencies can defeat even good planning, but that raises its own questions.\nThe contractor, L3Harris, has worked for the F.A.A. for decades and should know this infrastructure well. What was the failover plan? Did the agency review it? And why can’t the cause be identified quickly, when faulty equipment usually shows itself during a cutover?\nIf the account is accurate, it points to serious failures in planning and oversight. If not, the public deserves a fuller explanation.\nBrian O’Malley\nWestport, Conn.\nTo the Editor:\nOfficials are blaming an aging air traffic control system for Friday’s disruption. Professional football teams spend billions to build new stadiums (often with taxpayer dollars) even though they have perfectly fine ones already.\nRelated Content\nAdvertisement",
+ "words": 281,
+ "mode": "rss-summary"
+}
