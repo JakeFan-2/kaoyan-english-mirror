@@ -1,7 +1,7 @@
 {
  "date": "2026-11-21",
- "generated_at": "2026-11-21T03:43:00+08:00",
- "total": 110,
+ "generated_at": "2026-11-21T14:01:51+08:00",
+ "total": 112,
  "sources": {
   "The Economist": {
    "ok": true,
@@ -12,7 +12,7 @@
   },
   "The Guardian": {
    "ok": true,
-   "candidates": 73,
+   "candidates": 74,
    "channels": 10,
    "error": null,
    "url": "https://www.theguardian.com/environment/rss"
@@ -33,7 +33,7 @@
   },
   "Christian Science Monitor": {
    "ok": true,
-   "candidates": 22,
+   "candidates": 23,
    "channels": 3,
    "error": null,
    "url": "https://rss.csmonitor.com/feeds/world"
